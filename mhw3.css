@@ -1,0 +1,785 @@
+@font-face{
+    font-family: "Titillium Web";
+    src: url("fonts/titillium/TitilliumWeb-Regular.ttf")format("truetype");
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+}
+body{
+    margin: 0 11%;
+    font-family: 'Titillium Web'
+}
+
+#primaNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    height: 44px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 78%; 
+}
+
+#parteSinistra{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Formula1 Display-Bold Bold";
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.parteSinistraStile{
+    margin-right: 20px;
+}
+
+#parteSinistra img{
+    width: 32px;
+    height: 22px;
+    opacity: 0.5;
+    border-right: 1px solid lightslategray;
+    padding-right: 10px;
+    margin-right: 32px;
+    cursor: pointer;
+}
+
+#parteSinistra img:hover{
+    opacity: 1;
+}
+
+.parteSinistraStile{
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.parteSinistraStile:hover{
+    color: black;
+}
+
+#parteDestra{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 550;
+}
+
+.parteDestraStile{
+    margin-right: 32px;
+    cursor: pointer;
+    color: black;
+    border-bottom: 1px solid white;
+}
+
+.parteDestraStile:hover{
+    color: #e10600;
+    border-bottom: 1px solid #e10600;
+}
+
+#parteDestra img{
+    height: 60px;
+    width: 80px;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#SignIn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #1f1f27;
+    color: white;
+    width: max-content;
+    height: 20px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+#svgOmino{
+    height: 12px;
+    padding-right: 8px;
+}
+
+.sfondoRosso{
+    border: 1px solid #e10600;
+    background-color: #e10600;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: max-content;
+    height: auto;
+    font-weight: 600;
+    color: white;
+}
+
+.sfondoRosso:hover{
+    border: 1px solid #e10600;
+    background-color: white;
+    color: black;
+}
+
+/*NAVBAR ROSSA*/
+#secondaNav{
+    top: 44px;
+    font-size: 12px;
+    height: 64px;
+    background-color: #e10600;
+    font-weight: 400;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    align-items: center;
+    width: 100%;
+}
+
+#secondaNav div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    margin: 0 332px 0 164px;
+}
+
+#secondaNav div p{
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#secondaNav div svg{
+    align-items: center;
+    cursor: pointer;
+    height: 10px;
+    margin-left: -32px;
+}
+
+#secondaNav div img{
+    width: 128px;
+    height: auto;
+}
+
+/*PASSO AL CORPO DEL SITO*/
+.rosso{
+    color:#e10600;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: .5px;
+}
+
+.newsBox{
+    margin: 128px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.BoxPrincipale{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-top: 8px solid #e10600;
+    border-right: 8px solid #e10600;
+    border-radius: 0 25px 0 0 ;
+    width: 45vw;
+    padding: 16px 0 12px 0;
+}
+
+#stileLinkBoxGrande{
+    font-family: "Formula1 Display-Bold Bold";
+    font-size: 32px;
+    line-height: 36px;
+    margin: 0 0 12px 0;
+}
+
+.newsBox div img{
+    width: 96%;
+    height: auto;
+}
+
+
+
+.BoxSecondario{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 50vw;
+    flex-wrap: wrap;
+}
+
+.stileContenutoBoxSecondario{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: calc(50% - 16px);
+    height: auto;
+    margin-left: 16px;
+    margin-bottom: 8px;
+}
+
+img.fotoBoxSecondario{
+    width: 100%;
+    height: auto; 
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.testoBoxSecondario{
+    height: 100px;
+    max-height: 100px;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 23px;
+    cursor: pointer;
+    margin: 0;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-radius:  0 0 10px 0;
+    padding: 4px;
+    align-items: center;
+    justify-content: left;
+    text-overflow: ellipsis;
+}
+
+.testoBoxSecondario:hover{
+    border-right: 1px solid #e10600;
+    border-bottom: 1px solid #e10600;
+    border-radius:  0 0 10px 0;
+}
+
+/*CONTAINER VIOLA*/
+.containerViola{
+    margin-top: 32px;
+    border-top: 8px solid #501d83;
+    border-right: 8px solid #501d83;
+    border-bottom: 8px solid #501d83;
+    border-radius: 0 25px 25px 0;
+    color: white;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.contentViola{
+    display: flex;
+    background: linear-gradient(to right, #501d83, white);
+    margin: 8px 8px 8px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boxViolaSinistra{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.TitoloViola{
+    font-size: 32px;
+    font-family: "Formula1 Display-Bold Bold";
+}
+
+.contenutoViola{
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.containerViola .contentViola img{
+    width: 50%;
+    height: auto;
+    border-radius: 0 25px 25px 0;
+}
+
+.watchNow{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    color: black;
+    background-color: white;
+    width: fit-content;
+    height: auto;
+    padding: 0 12px;
+    align-items: center;
+    font-weight: 300;
+}
+
+.containerViola .contentViola .boxViolaSinistra .watchNow svg{
+    height: 12px;
+    padding-left: 16px;
+}
+
+/*CONTAINER ROSSO*/
+.editors{
+    margin-top: 32px;
+    border-top: 8px solid #e10600;
+    border-right: 8px solid #e10600;
+    border-bottom: 8px solid #e10600;
+    border-radius: 0 25px 25px 0;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+#editorsPrincipale{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 45vw;
+    padding: 16px 0 12px 0;
+}
+
+#editorsTesto{
+    margin-top: 0;
+    font-family: "F1";
+    font-size: 18px;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-radius:  0 0 10px 0;
+    width: 34.5vw;
+    height: 7.2vw;
+}
+
+#editorsTesto:hover{
+    border-right: 1px solid #e10600;
+    border-bottom: 1px solid #e10600;
+    border-radius:  0 0 10px 0;
+}
+
+#sectionMoreNews{
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    align-items: center;
+    margin-top: 48px;
+    margin-bottom: 16PX;
+}
+
+#moreNews{
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: "Formula1 Display-Bold Bold";
+    color: black;
+    text-decoration: none;
+    align-items: center;
+}
+
+#moreNews:hover{
+    color: #e10600;
+}
+
+.ArrowRossa{
+    width: 12px;
+    padding-left: 12px;
+}
+
+#boxMoreNews{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    border-top: 8px solid black;
+    padding: 30px 0 30px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*"NAV" CLASSIFICHE*/
+.classifiche{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 350px;
+}
+
+.standings{
+   cursor: pointer;
+   text-transform: uppercase;
+   text-decoration: none;
+   font-size: 14px;
+   line-height: 17px;
+   font-family:"F1", sans-serif;
+   color: #15151e;
+   border: 2px solid white;
+   background-color: white;
+}
+
+.standings:hover{
+    border-bottom: 2px solid #e10600;
+}
+
+/*CLASSIFICA PILOTI*/
+#classificaPilota{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+.boxClassifica{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 128px;
+    margin-left: 100px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.boxClassifica:hover{
+    background-color: #38383f;
+    color: white;
+}
+
+.infoPilota{
+    display: flex;
+    height: auto;
+    align-items: flex-end;
+    width: auto;
+    align-items: center;
+}
+
+.numeroClassifica{
+    font-family: "Formula1 Display-Bold Bold";
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: end;
+    width: 28px;
+}
+
+.nomePilota{
+    font-size: 13px;
+    margin-left: 5px;
+    font-family: "F1", sans-serif;
+}
+
+.cognomePilota{
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 5px;
+    font-family: "Formula1 Display-Bold Bold";
+    text-transform: uppercase;
+}
+
+.squadraPilota{
+    font-size: 13px;
+    margin-left: 15px;
+    font-family: "Titillium Web";
+    color: #67676D;
+    justify-content: center;
+}
+
+.puntiPilota{
+    display: flex;
+    justify-content: space-between;
+}
+
+.stilePuntiPilota{
+    font-size: 12px;
+    margin: 0 0 0 10px;
+    color: #15151E;
+    background-color: #EDEDED;
+    padding: 2px 10px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.redbull{
+    background-color: #3671C6;
+    min-width: 6px;
+    height: 20px;
+    border-radius: 1px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.ferrari{
+    background-color: #E80020;
+    min-width: 6px;
+    height: 20px;
+    border-radius: 1px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.mclaren{
+    background-color: #FF8000;
+    min-width: 6px;
+    height: 20px;
+    border-radius: 1px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.mercedes{
+    background-color: #27F4D2;
+    min-width: 6px;
+    height: 20px;
+    border-radius: 1px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.aston{
+    background-color: #229971;
+    min-width: 6px;
+    height: 20px;
+    border-radius: 1px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.rb{
+    background-color: #6692FF;
+    min-width: 6px;
+    height: 20px;
+    border-radius: 1px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.haas{
+    background-color: #B6BABD;
+    min-width: 6px;
+    height: 20px;
+    border-radius: 1px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.alpine{
+    background-color: #0093CC;
+    min-width: 6px;
+    height: 20px;
+    border-radius: 1px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.williams{
+    background-color: #64C4FF;
+    min-width: 6px;
+    height: 20px;
+    border-radius: 1px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.sauber{
+    background-color: #52e252;
+    min-width: 6px;
+    height: 20px;
+    border-radius: 1px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.center{
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.hidden{
+    display: none;
+}
+
+/*SHOP*/
+#shop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 232px;
+    margin-top: 60px;
+}
+
+#boxShopUno {
+    width: 31.5%;
+    height: 100%;
+    background-image: url("file:///C:/Users/anton/Desktop/Sito%20Formula1/Immagini/Shop/uno.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#boxShopDue{
+    width: 31.5%;
+    height: 100%;
+    background-image: url("file:///C:/Users/anton/Desktop/Sito Formula1/Immagini/Shop/due.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#boxShopTre{
+    width: 31.5%;
+    height: 100%;
+    background-image: url("file:///C:/Users/anton/Desktop/Sito Formula1/Immagini/Shop/tre.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testoShop{
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+    font-family: "Formula1 Display-Bold Bold";
+    margin-bottom: 32px;
+}
+
+.bordoShop{
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    border-radius: 0 25px 0 0;
+    z-index: 1;
+    padding: 8px;
+    margin: 0 8px 0 8px;
+}
+
+.boxInternoShop{
+    padding: 4px;
+    margin: 2px 2px 0 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1px;
+    padding-bottom: 32px;
+    border-radius: 0 25px 0 0;
+}
+
+/*SOCIAL*/
+#barraSocial{
+    border-top: 8px solid #15151e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 60px -175px 0 -175px;
+    color: white;
+    background-color: #38383f;
+    padding: 8px;
+}
+
+#store{
+    display: flex;
+    justify-content: space-between;
+}
+
+#barraSocial #store img{
+    width: 135px;
+    height: auto;
+}
+
+#barraSocial p{
+    display: flex;
+    align-items: center;
+    margin: 0 8px 0 165px;
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 400;
+}
+
+#social{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 175px;
+}
+
+#barraSocial #social svg{
+    height: 26px;
+    margin-left: 10px;
+    border: 1px solid #15151e;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+#barraSocial #social svg:hover{
+    background-color: #15151e;
+}
+
+
+
+/*FOOTER*/
+
+#footer{
+    background-color: #15151e;
+    height: 400px;
+    margin: 0 -175px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-family: "Titillium Web";
+}
+
+#titoloFooter{
+    font-size: 18px;
+    font-family: "Formula1 Display-Bold Bold";
+    cursor: pointer;
+    padding-top: 20px;
+  }
+  
+  #containerFooter{
+    display: flex;
+    align-items: flex-start;
+    margin: 0 200px;
+    width: calc(100% - 360px);
+    justify-content: space-between;
+    border-right: 10px solid #38383f;
+    border-bottom: 10px solid #38383f;
+    border-radius: 0 0 25px 0;
+    padding: 15px;
+  }
+  
+  .secondoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+  
+  .itemSecondoContainer{
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    font-family: "Titillium Web";
+    padding-bottom: 2px;
+    padding: 3px;
+  }
+  
+  .itemSecondoContainer:hover{
+    text-decoration: underline red;
+  }
+
