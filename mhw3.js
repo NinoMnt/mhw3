@@ -51,55 +51,47 @@ function getClassificaPiloti() {
                 const stilePuntiPilota = document.createElement('div');
                 stilePuntiPilota.classList.add('stilePuntiPilota');
                 stilePuntiPilota.textContent = pilota.points;
-                let color;
+                let colorePilota = document.createElement('div');
                 switch (pilota.Constructors[0].name.toLowerCase()) {
                     case 'red bull':
-                        color = document.createElement('div');
-                        color.classList.add('redbull');
+                        colorePilota.classList.add('redbull');
                         break;
                     case 'ferrari':
-                        color = document.createElement('div');
-                        color.classList.add('ferrari');
+                        colorePilota.classList.add('ferrari');
                         break;
                     case 'mclaren':
-                        color = document.createElement('div');
-                        color.classList.add('mclaren');
+                        colorePilota.classList.add('mclaren');
                         break;
                     case 'mercedes':
-                        color = document.createElement('div');
-                        color.classList.add('mercedes');
+                        colorePilota.classList.add('mercedes');
                         break;
                     case 'aston martin':
-                        color = document.createElement('div');
-                        color.classList.add('aston');
+                        colorePilota.classList.add('aston');
                         break;
                     case 'rb f1 team':
-                        color = document.createElement('div');
-                        color.classList.add('rb');
+                        colorePilota.classList.add('rb');
                         break;
                     case 'haas f1 team':
-                        color = document.createElement('div');
-                        color.classList.add('haas');
+                        colorePilota.classList.add('haas');
                         break;
-                    case 'Alpine F1 Team':
-                        color = document.createElement('div');
-                        color.classList.add('alpine');
+                    case 'alpine f1 team':
+                        colorePilota.classList.add('alpine');
                         break;
-                    case 'Williams':
-                        color = document.createElement('div');
-                        color.classList.add('williams');
+                    case 'williams':
+                        colorePilota.classList.add('williams');
                         break;
-                    case 'Sauber':
-                        color = document.createElement('div');
-                        color.classList.add('sauber');
+                    case 'sauber':
+                        colorePilota.classList.add('sauber');
                         break;
                     default:
+                        colorePilota.classList.add('sauber');
+                        colorePilota.style.backgroundColor='magenta'
                         break;
                 }
 
                 boxClassifica.appendChild(infoPilota);
                 infoPilota.appendChild(numeroClassifica);
-                infoPilota.appendChild(color);
+                infoPilota.appendChild(colorePilota);
                 infoPilota.appendChild(nomePilota);
                 infoPilota.appendChild(cognomePilota);
                 infoPilota.appendChild(squadraPilota);
